@@ -4,7 +4,12 @@ import navlinks from "../../Assets/Navlinks";
 
 export const Navbar = () => {
   const location = useLocation();
-  const [active, setActive] = useState(location.pathname.split("/").pop());
+  const [active, setActive] = useState(
+    !location.pathname.split("/").pop() === ""
+      ? location.pathname.split("/").pop()
+      : "HOME"
+  );
+  console.log(active);
   const [burger, setBurger] = useState(false);
   return (
     <div className="h-[6rem] text-richblack-5 flex justify-center items-center pt-4">
@@ -28,7 +33,8 @@ export const Navbar = () => {
               <p
                 key={index}
                 className={`${
-                  active === page.title.toLowerCase() && "text-yellow-100"
+                  active.toLowerCase() === page.title.toLowerCase() &&
+                  "text-yellow-100"
                 }`}
                 onClick={() => setActive(page.title.toLowerCase())}
               >
@@ -84,7 +90,8 @@ export const Navbar = () => {
               <p
                 key={index}
                 className={`${
-                  active === page.title.toLowerCase() && "text-yellow-100"
+                  active.toLowerCase() === page.title.toLowerCase() &&
+                  "text-yellow-100"
                 }`}
                 onClick={() => setActive(page.title.toLowerCase())}
               >
