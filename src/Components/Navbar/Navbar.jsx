@@ -9,7 +9,6 @@ export const Navbar = () => {
       ? location.pathname.split("/").pop()
       : "HOME"
   );
-  console.log(active);
   const [burger, setBurger] = useState(false);
   return (
     <div className="h-[6rem] text-richblack-5 flex justify-center items-center pt-4">
@@ -29,9 +28,8 @@ export const Navbar = () => {
         </Link>
         <div className="flex md:text-[1.6rem] text-[1.25rem] md:gap-x-10 gap-x-5 tracking-wider">
           {navlinks.map((page, index) => (
-            <Link to={page.link}>
+            <Link to={page.link} key={index}>
               <p
-                key={index}
                 className={`${
                   active.toLowerCase() === page.title.toLowerCase() &&
                   "text-yellow-100"
@@ -86,9 +84,8 @@ export const Navbar = () => {
           } md:text-[1.6rem] text-[1.25rem] md:gap-x-10 gap-x-5 tracking-wider items-center mb-2`}
         >
           {navlinks.map((page, index) => (
-            <Link to={page.link}>
+            <Link to={page.link} key={index}>
               <p
-                key={index}
                 className={`${
                   active.toLowerCase() === page.title.toLowerCase() &&
                   "text-yellow-100"

@@ -11,7 +11,7 @@ export const Projects = () => {
             PROJECTS
           </h1>
           {projects.map((project, index) => (
-            <div className="my-4 md:text-[1.563rem] text-[1.0rem] text-white slide-in-elliptic-top-fwd md:w-full w-[98%]">
+            <div className="my-4 md:text-[1.563rem] text-[1.0rem] text-white slide-in-elliptic-top-fwd md:w-full w-[98%]" key={index}>
               <p className="mb-2">
                 <span className="text-[#F69334]">
                   {project.No}. {project.title}:-
