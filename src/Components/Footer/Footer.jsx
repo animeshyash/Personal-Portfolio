@@ -5,13 +5,13 @@ import { SiLeetcode } from "react-icons/si";
 export const Footer = () => {
   return (
     <div className="flex bg-richblue-600 text-richblack-5 gap-5">
-      <div className="flex h-[230px] justify-around items-center w-11/12 mx-auto">
+      <div className="flex h-[14.375rem] justify-around items-center md:w-11/12 w-5/6 mx-auto">
         <div className="">
-          <p className="text-[70px] font-bold tracking-widest">
+          <p className="md:text-[4.375rem] text-[2.375rem] font-bold tracking-widest">
             Come say hello!
           </p>
         </div>
-        <div className="flex items-center text-[60px] gap-5">
+        <div className="flex items-center md:text-[3.75rem] text-[2.75rem] md:gap-5 gap-3">
           <a
             href="https://github.com/animeshyash"
             target="_blank"

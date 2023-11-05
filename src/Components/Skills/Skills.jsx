@@ -15,81 +15,81 @@ import "../Skills/Skills.css";
 
 export const Skills = () => {
   return (
-    <div className="bg-richblue-300 h-[1200px] flex flex-col justify-center items-center">
-      <p className="text-[80px] font-bold tracking-wider animate-charcter mb-10">
+    <div className="bg-richblue-300 h-[75rem] flex flex-col justify-center items-center">
+      <p className="md:text-[5rem] text-[3rem] text-center font-bold tracking-wider animate-charcter mb-10">
         TECHNICAL SKILLS
       </p>
-      <div className="w-11/12 mx-auto flex justify-center items-center flex-wrap gap-10">
+      <div className="w-11/12 mx-auto flex justify-center items-center flex-wrap md:gap-10 gap-6">
         <img
           src={html}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={css}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={express}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={git}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={github}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={javascript}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={mongo}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={node}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={react}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={redux}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={tailwind}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
         <img
           src={java}
           width={220}
-          className="m-5 heartbeat"
+          className="m-5 heartbeat md:w-[220px] w-[90px]"
           alt="Technical Skill"
         />
       </div>
